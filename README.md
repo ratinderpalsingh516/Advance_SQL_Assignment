@@ -213,7 +213,7 @@ result - 2
 
 SELECT COUNT(address_id)  
 FROM address  
-WHERE postal_code REGEXP '9.[1-5]..';  
+WHERE postal_code REGEXP '^9[0-9][1-5][0-9]{2}$';  
 
 ### Output:
 <img width="1226" alt="Screenshot 2023-03-07 at 5 10 22 PM" src="https://user-images.githubusercontent.com/122514456/223416818-5f9c25ec-eca1-4068-9924-06154fde4dcd.png">
